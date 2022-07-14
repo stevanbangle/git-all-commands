@@ -1,0 +1,78 @@
+To initialise 
+$git init
+
+Set name and email
+$git config --global user.name "Ram" 
+$git config --global user.email "test@gmail.com"
+
+For editing configuration
+$git config --global -e
+
+Adding remote repositories
+$git remote add origin https://github.com/stevanbangle/practice.git
+
+See the origin
+$git remote -v
+
+Set new remote url
+$git remote set-url origin https://github.com/stevanbangle/practice.git
+
+Send local repo to remote repo ( first time need to set up stream (-u))
+$git push -u origin master
+
+Check git status
+$git status
+
+Checking logs
+$git log
+
+logs in a line
+$git log --oneline
+
+Send specific files 
+$git add filename
+
+Send all files from workspace to staging area
+$git add .
+$git add --all
+
+Compare difference between workspace and staging area
+$git diff
+
+Compare difference between staged and repo
+$git diff --staged
+$git diff --staged HEAD
+
+Compare difference between workspace and repo
+$git diff HEAD
+
+Comparing difference between commits
+$git diff c7e34bb db2caf9
+
+Merge conflict: A conflict arises when two separate branches have made edits to the same line in a file, or when a file has been deleted in one branch but edited in the other.
+
+Generating ssh keys:
+$ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+or else
+$ssh-keygen and keep pressing enter.
+
+Showing changes in the commit
+$git show db2caf9
+
+To see the changes made in file
+$git annotate filename
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
