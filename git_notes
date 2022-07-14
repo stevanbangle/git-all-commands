@@ -1,9 +1,12 @@
-Initialise 
+To initialise 
 $git init
 
 Set name and email
 $git config --global user.name "Ram" 
 $git config --global user.email "test@gmail.com"
+
+For editing configuration
+$git config --global -e
 
 Adding remote repositories
 $git remote add origin https://github.com/stevanbangle/practice.git
@@ -26,4 +29,14 @@ $git add filename
 Send all files from workspace to staging area
 $git add .
 $git add --all
+
+Compare difference between workspace and staging area
+$git diff
+
+Compare difference between staged and repo
+$git diff --staged
+$git diff --staged HEAD
+
+Compare difference between workspace and repo
+$git diff HEAD
 
