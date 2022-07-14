@@ -29,6 +29,9 @@ $git log
 logs in a line
 $git log --oneline
 
+Logs in reverse order
+$git log --reverse
+
 Send specific files 
 $git add filename
 
@@ -36,6 +39,10 @@ Send all files from workspace to staging area
 $git add .
 $git add --all
 
+Unstaging files ( undoing git add)
+$git restore --staged filename
+
+Diff:
 Compare difference between workspace and staging area
 $git diff
 
@@ -62,8 +69,34 @@ $git show db2caf9
 To see the changes made in file
 $git annotate filename
  
+To remove file from github
+$git rm filename
+$git commit -m "message"
 
+Finding authors of the lines
+$git blame filename
 
+Branches:
+List branches
+$git branch
+
+List all the branches
+$git branch -a
+
+Move to other branch
+$git checkout branchname
+
+Creating new branch
+$git branch newbranchname
+
+Deleting a branch (deletes if it is merged)
+$git branch -d branchname 
+
+Deleting a branch if it is not merged also(forcefully)
+$git branch -D branchname 
+
+Pushing branch to remote repo
+$git push origin branchname
 
 
 
