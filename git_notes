@@ -7,3 +7,23 @@ $git config --global user.email "test@gmail.com"
 
 Adding remote repositories
 $git remote add origin https://github.com/stevanbangle/practice.git
+
+See the origin
+$git remote -v
+
+Set new remote url
+$git remote set-url origin https://github.com/stevanbangle/practice.git
+
+Send local repo to remote repo ( first time need to set up stream (-u))
+$git push -u origin master
+
+Check git status
+$git status
+
+Send specific files 
+$git add filename
+
+Send all files from workspace to staging area
+$git add .
+$git add --all
+
