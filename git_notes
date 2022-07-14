@@ -1,0 +1,9 @@
+Initialise 
+$git init
+
+Set name and email
+$git config --global user.name "Ram" 
+$git config --global user.email "test@gmail.com"
+
+Adding remote repositories
+$git remote add origin https://github.com/stevanbangle/practice.git
