@@ -98,6 +98,12 @@ $git branch -D branchname
 Pushing branch to remote repo
 $git push origin branchname
 
+Viewing the merged branch
+$git branch --merged
+
+Viewing the unmerged branch
+$git branch --no-merged
+
 Merging:
 $git checkout master*(*where we want to merge branch) then
 $git merge branchname
@@ -113,6 +119,60 @@ $git tag v2.2 c703fd84
 
 Deleting a tag
 $git tag -d tagname
+
+Git ignore: to ignore the unwanted files for storing in repos.
+$vi .gitignore
+  *.cpp
+  dir/
+  filename
+
+Git stash: stores all the most recent changes in a workspace and resets the state of the workspace to the prior commit state.
+$git stash
+
+To list
+$git stash list
+
+To take stashed area
+$git stash pop
+
+To delete stashed area
+$git stash drop
+
+To clear stash item 
+$git stash clear
+
+Git fetch: It will only update the remote repo to local repo.
+$git fetch
+
+Git fetch will not updage logs.after fetching to merger everything then use
+$git merge
+
+Git reset: To delete workspace or statging area
+Remove files from worksapce  and staging area
+$git reset --hard HEAD~1 #reverses from 3,2,1 (commit, staging and workspace)
+
+$git reset --soft HEAD~1 #deletes from 3 to 2 (form commit and bring them to staging area)
+
+$git reset HEAD~1 #reverses to 1 ( reverses to workspace)
+
+Remove files from staging area
+$git reset .
+
+Revert: deleting a commit but indeed it will make a new commit.
+$git revert commit-id
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
