@@ -120,6 +120,9 @@ $git tag v2.2 c703fd84
 Deleting a tag
 $git tag -d tagname
 
+Deleting tag from remote repo
+$git push --delete origin v2.1(tagname)
+
 Git ignore: to ignore the unwanted files for storing in repos.
 $vi .gitignore
   *.cpp
