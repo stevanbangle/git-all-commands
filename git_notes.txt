@@ -98,6 +98,22 @@ $git branch -D branchname
 Pushing branch to remote repo
 $git push origin branchname
 
+Merging:
+$git checkout master*(*where we want to merge branch) then
+$git merge branchname
+
+Forking: It is used to copy other's repo to your account.
+
+Tags: Giving tags for taging a commit id
+$git tag v1.1
+$git push origin v1.1
+
+Tagging for specific commit
+$git tag v2.2 c703fd84
+
+Deleting a tag
+$git tag -d tagname
+
 
 
 
