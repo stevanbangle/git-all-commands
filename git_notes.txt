@@ -92,6 +92,9 @@ $git branch newbranchname
 Deleting a branch (deletes if it is merged)
 $git branch -d branchname 
 
+Deleting remote branch
+$git push origin --delete branchname
+
 Deleting a branch if it is not merged also(forcefully)
 $git branch -D branchname 
 
